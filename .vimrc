@@ -27,6 +27,14 @@ call plug#end()
 " changes causes files to be hidden instead of closed
 set hidden
 
+" use hybrid line numbers
+set number relativenumber
+
+" use mouse
+set mouse=a
+map <2-LeftMouse> *``
+
+" use dracula color scheme
 color dracula
 
 " indentation
