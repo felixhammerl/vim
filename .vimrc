@@ -27,6 +27,9 @@ call plug#end()
 " changes causes files to be hidden instead of closed
 set hidden
 
+" use system clipboard
+set clipboard=unnamed
+
 " use hybrid line numbers
 set number relativenumber
 
