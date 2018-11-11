@@ -1,9 +1,33 @@
 " syntax highlighting
 syntax enable
 
+call plug#begin('~/.vim/plugs')
+
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/kien/ctrlp.vim.git'
+Plug 'https://github.com/SirVer/ultisnips.git'
+Plug 'https://github.com/jordwalke/VimCompleteLikeAModernEditor.git'
+Plug 'https://github.com/jordwalke/AutoComplPop.git'
+Plug 'https://github.com/vim-scripts/grep.vim.git'
+Plug 'https://github.com/vim-syntastic/syntastic.git'
+Plug 'https://github.com/tpope/vim-surround.git'
+Plug 'https://github.com/tpope/vim-projectionist.git'
+Plug 'https://github.com/tpope/vim-commentary.git'
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+Plug 'https://github.com/editorconfig/editorconfig-vim.git'
+Plug 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
+Plug 'https://github.com/mxw/vim-jsx.git', { 'for': 'javascript' }
+Plug 'https://github.com/hail2u/vim-css3-syntax.git', { 'for': 'css' }
+
+call plug#end()
+
 " opening a new file when the current buffer has unsaved
 " changes causes files to be hidden instead of closed
 set hidden
+
+color dracula
 
 " indentation
 filetype plugin indent on
@@ -24,27 +48,6 @@ set timeoutlen=1000 ttimeoutlen=0
 
 " cd to currently active file on tab/buffer open
 set autochdir
-
-call plug#begin('~/.vim/plugs')
-
-Plug 'https://github.com/scrooloose/nerdtree.git'
-Plug 'https://github.com/kien/ctrlp.vim.git'
-Plug 'https://github.com/SirVer/ultisnips.git'
-Plug 'https://github.com/jordwalke/VimCompleteLikeAModernEditor.git'
-Plug 'https://github.com/jordwalke/AutoComplPop.git'
-Plug 'https://github.com/vim-scripts/grep.vim.git'
-Plug 'https://github.com/vim-syntastic/syntastic.git'
-Plug 'https://github.com/tpope/vim-surround.git'
-Plug 'https://github.com/tpope/vim-projectionist.git'
-Plug 'https://github.com/tpope/vim-commentary.git'
-Plug 'https://github.com/vim-airline/vim-airline.git'
-Plug 'https://github.com/vim-airline/vim-airline-themes.git'
-Plug 'https://github.com/editorconfig/editorconfig-vim.git'
-Plug 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
-Plug 'https://github.com/mxw/vim-jsx.git', { 'for': 'javascript' }
-Plug 'https://github.com/hail2u/vim-css3-syntax.git', { 'for': 'css' }
-
-call plug#end()
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
