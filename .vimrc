@@ -27,21 +27,22 @@ set autochdir
 
 call plug#begin('~/.vim/plugs')
 
-Plug 'scrooloose/nerdtree'
-Plug 'kien/ctrlp.vim'
-Plug 'SirVer/ultisnips'
-Plug 'jordwalke/VimCompleteLikeAModernEditor' | Plug 'jordwalke/AutoComplPop'
-Plug 'vim-scripts/grep.vim'
-Plug 'vim-syntastic/syntastic'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-projectionist'
-Plus 'tpope/vim-commentary'
-Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'mxw/vim-jsx', { 'for': 'javascript' }
-Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
-Plug ''
+Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/kien/ctrlp.vim.git'
+Plug 'https://github.com/SirVer/ultisnips.git'
+Plug 'https://github.com/jordwalke/VimCompleteLikeAModernEditor.git'
+Plug 'https://github.com/jordwalke/AutoComplPop.git'
+Plug 'https://github.com/vim-scripts/grep.vim.git'
+Plug 'https://github.com/vim-syntastic/syntastic.git'
+Plug 'https://github.com/tpope/vim-surround.git'
+Plug 'https://github.com/tpope/vim-projectionist.git'
+Plug 'https://github.com/tpope/vim-commentary.git'
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+Plug 'https://github.com/editorconfig/editorconfig-vim.git'
+Plug 'https://github.com/pangloss/vim-javascript.git', { 'for': 'javascript' }
+Plug 'https://github.com/mxw/vim-jsx.git', { 'for': 'javascript' }
+Plug 'https://github.com/hail2u/vim-css3-syntax.git', { 'for': 'css' }
 
 call plug#end()
 
