@@ -35,7 +35,9 @@ set number relativenumber
 
 " use mouse
 set mouse=a
+
 map <2-LeftMouse> *``
+set hlsearch
 
 " use dracula color scheme
 color dracula
@@ -44,9 +46,10 @@ color dracula
 filetype plugin indent on
 set expandtab shiftwidth=2 softtabstop=2 tabstop=2
 set smartindent
+set nowrap
 
 " Put the swap files in another folder
-set directory=$HOME/.vim/swap//
+set directory=$HOME/.vim/swap/
 
 " Show matching parentheses
 set showmatch
@@ -73,7 +76,7 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-b> :NERDTreeFind<CR>
 
 " Open quick-fix selection in new tab
-autocmd FileType qf nnoremap <buffer> <Enter> <C-W><Enter><C-W>T
+" autocmd FileType qf nnoremap <buffer> <Enter> <C-W><Enter><C-W>T
 
 " grep
 nnoremap <silent><C-f> :Rgrep<CR>
@@ -98,8 +101,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let b:syntastic_checkers = ['standard']
-if executable('node_modules/.bin/standard')
-  let b:syntastic_javascript_standard_exec = 'node_modules/.bin/standard'
-endif
+let g:syntastic_javascript_checkers = ['standard']
+let g:syntastic_javascript_standard_generic = 1
+let b:syntastic_javascript_standard_exec = 'standard'
 
