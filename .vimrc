@@ -103,5 +103,8 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_javascript_checkers = ['standard']
 let g:syntastic_javascript_standard_generic = 1
-let b:syntastic_javascript_standard_exec = 'standard'
-
+if executable('node_modules/.bin/standard')
+  let b:syntastic_javascript_standard_exec = 'node_modules/.bin/standard'
+else
+  let b:syntastic_javascript_standard_exec = 'standard'
+endif
