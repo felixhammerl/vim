@@ -86,7 +86,7 @@ map <C-b> :NERDTreeFind<CR>
 nnoremap <silent><C-f> :Rgrep<CR>
 
 " Airline
-let g:airline_theme='deus'
+let g:airline_theme='sol'
 
 " Trigger configuration on CTRL-b
 let g:UltiSnipsExpandTrigger="<c-b>"
