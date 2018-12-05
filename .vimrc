@@ -164,6 +164,9 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:deoplete#enable_at_startup = 1
 
 " langclient settings
+" let g:LanguageClient_loggingLevel = 'INFO'
+" let g:LanguageClient_loggingFile = '/Users/felixhammerl/LanguageClient.log'
+" let g:LanguageClient_serverStderr =  '/Users/felixhammerl/LanguageServer.log'
 " let g:LanguageClient_serverCommands = {
 "       \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
 "       \ 'javascript': ['javascript-typescript-langserver'],
