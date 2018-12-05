@@ -26,7 +26,7 @@ Plug 'https://github.com/othree/csscomplete.vim'
 Plug 'https://github.com/Chiel92/vim-autoformat.git'
 Plug '/usr/local/opt/fzf'
 Plug 'https://github.com/junegunn/fzf.vim'
-" Plug 'https://github.com/autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
+Plug 'https://github.com/autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 
 call plug#end()
 
@@ -164,18 +164,15 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:deoplete#enable_at_startup = 1
 
 " langclient settings
-" let g:LanguageClient_loggingLevel = 'INFO'
-" let g:LanguageClient_loggingFile = '/Users/felixhammerl/LanguageClient.log'
-" let g:LanguageClient_serverStderr =  '/Users/felixhammerl/LanguageServer.log'
-" let g:LanguageClient_serverCommands = {
-"       \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-"       \ 'javascript': ['javascript-typescript-langserver'],
-"       \ 'javascript.jsx': ['javascript-typescript-langserver'],
-"       \ 'jsx': ['javascript-typescript-langserver'],
-"       \ 'css': ['vscode-css-languageserver-bin'],
-"       \ }
-" let g:LanguageClient_autoStart = 1
-" nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-" nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
-" nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
+let g:LanguageClient_serverCommands = {
+      \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+      \ 'javascript': ['javascript-typescript-stdio'],
+      \ 'javascript.jsx': ['javascript-typescript-stdio'],
+      \ 'jsx': ['javascript-typescript-stdio'],
+      \ 'css': ['vscode-css-languageserver-bin'],
+      \ }
+let g:LanguageClient_autoStart = 1
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
 
