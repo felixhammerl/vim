@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugs')
 
 Plug 'https://github.com/dracula/vim', { 'as': 'dracula' }
 Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'https://github.com/SirVer/ultisnips.git'
 Plug 'https://github.com/w0rp/ale'
