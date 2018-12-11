@@ -22,6 +22,7 @@ Plug 'https://github.com/mustache/vim-mustache-handlebars'
 Plug 'https://github.com/othree/html5.vim'
 Plug 'https://github.com/neoclide/vim-jsx-improve', { 'for': [ 'javascript', 'js', 'jsx' ]}
 Plug 'https://github.com/hail2u/vim-css3-syntax.git', { 'for': 'css' }
+Plug 'https://github.com/digitaltoad/vim-pug.git'
 Plug 'https://github.com/groenewege/vim-less'
 Plug 'https://github.com/othree/csscomplete.vim'
 Plug 'https://github.com/Chiel92/vim-autoformat.git'
