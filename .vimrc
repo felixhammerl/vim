@@ -73,9 +73,6 @@ set smartcase
 " Eliminating delays on ESC
 set timeoutlen=1000 ttimeoutlen=0
 
-" cd to currently active file on tab/buffer open
-set autochdir
-
 " closetags and delimitmate
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
