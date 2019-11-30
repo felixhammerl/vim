@@ -31,6 +31,9 @@ Plug 'https://github.com/autozimu/LanguageClient-neovim', {'branch': 'next', 'do
 
 call plug#end()
 
+" Sets the leader key
+let mapleader = ","
+
 " opening a new file when the current buffer has unsaved
 " changes causes files to be hidden instead of closed
 set hidden
