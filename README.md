@@ -8,6 +8,5 @@ Don't put any lines in your .vimrc that you don't understand. Look at them, brow
 git clone git@github.com:felixhammerl/vim.git ~/.vim
 ln -s ~/.vim/.vimrc ~/.vimrc
 cd ~/.vim/
-./update.sh
 ```
 
