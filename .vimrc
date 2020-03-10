@@ -14,8 +14,7 @@ Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 Plug 'https://github.com/editorconfig/editorconfig-vim.git'
 Plug 'https://github.com/alvan/vim-closetag'
 Plug 'https://github.com/stephpy/vim-yaml'
-Plug '/usr/local/opt/fzf'
-Plug 'https://github.com/junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
