@@ -5,9 +5,6 @@ call plug#begin('~/.vim/plugs')
 
 Plug 'https://github.com/dracula/vim', { 'as': 'dracula' }
 Plug 'https://github.com/scrooloose/nerdtree.git'
-Plug 'https://github.com/Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'https://github.com/SirVer/ultisnips.git'
-Plug 'https://github.com/w0rp/ale'
 Plug 'https://github.com/Raimondi/delimitMate'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/tpope/vim-projectionist.git'
@@ -17,17 +14,8 @@ Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 Plug 'https://github.com/editorconfig/editorconfig-vim.git'
 Plug 'https://github.com/alvan/vim-closetag'
 Plug 'https://github.com/stephpy/vim-yaml'
-Plug 'https://github.com/mustache/vim-mustache-handlebars'
-Plug 'https://github.com/othree/html5.vim'
-Plug 'https://github.com/neoclide/vim-jsx-improve', { 'for': [ 'javascript', 'js', 'jsx' ]}
-Plug 'https://github.com/hail2u/vim-css3-syntax.git', { 'for': 'css' }
-Plug 'https://github.com/digitaltoad/vim-pug.git'
-Plug 'https://github.com/groenewege/vim-less'
-Plug 'https://github.com/othree/csscomplete.vim'
-Plug 'https://github.com/Chiel92/vim-autoformat.git'
 Plug '/usr/local/opt/fzf'
 Plug 'https://github.com/junegunn/fzf.vim'
-Plug 'https://github.com/autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 
 call plug#end()
 
@@ -128,45 +116,4 @@ let NERDTreeShowHidden=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 map <C-b> :NERDTreeFind<CR>
-
-" Trigger configuration on CTRL-b
-let g:UltiSnipsExpandTrigger="<c-b>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsSnippetsDir = "~/.vim/UltiSnips/"
-let g:UltiSnipsEditSplit="vertical"
-
-" Ale config
-let g:ale_linters = {
-      \ 'javascript': ['standard'],
-      \}
-let g:ale_fixers = {
-      \ 'json': ['jq', 'trim_whitespace', 'remove_trailing_lines'],
-      \ 'javascript': ['standard']
-      \}
-let g:ale_linter_aliases={
-      \ 'javascript': ['javascript', 'javascript.jsx', 'jsx'],
-      \}
-
-let g:ale_lint_on_save = 1
-let g:ale_fix_on_save = 1
-let g:ale_set_ballons = 1
-let g:ale_close_preview_on_insert = 1
-let g:ale_sign_column_always = 1
-let g:ale_completion_enabled = 1
-let g:ale_sign_error = '⌦'
-let g:ale_sign_warning = '☞'
-let g:airline#extensions#ale#enabled = 1
-let g:ale_echo_msg_error_str = 'E'
-let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-
-" deoplete
-let g:deoplete#enable_at_startup = 1
-
-" langclient settings
-let g:LanguageClient_serverCommands = {
-      \ 'rust': ['rustup', 'run', 'nightly', 'rls']
-      \ }
-let g:LanguageClient_autoStart = 1
 
