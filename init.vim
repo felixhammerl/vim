@@ -1,3 +1,5 @@
+set nocompatible
+
 "automated installation of vimplug if not installed
 
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
